@@ -109,8 +109,14 @@ main {
 }
 
 article {
-    margin-bottom: 30px;
+    scroll-margin-top: 70px;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 50px;
+    
 }
+
 
 .main-info h2{
     font-size: 2.5rem;
