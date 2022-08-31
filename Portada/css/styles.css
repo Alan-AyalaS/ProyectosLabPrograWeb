@@ -64,7 +64,7 @@ html {
 
 main {
     margin-top: 35px;
-    display: inline-block;
+    display: flex;
     width: 100%;
 }
 
