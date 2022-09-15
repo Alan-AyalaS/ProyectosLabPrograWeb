@@ -20,9 +20,79 @@
         </nav>
     </header>
     <main>
+        <h1>Lección 3: Introducción a la presentación en pantalla con CSS</h1>
         <section>
-            <article></article>
+            <article>
+                <h2>El papel del archivo de reset CSS</h2>
+                <p>Antes de empezar a crear un diseño visual de página Web vamos a ver cómo se utiliza un archivo de reset de CSS. Todos los elementos HTML se muestran en pantalla utilizando los estilos por defecto que aplica cada navegador. Ya hemos visto en el capítulo precedente cómo CSS nos permite definir estilos para tipos de letra, modificando el tamaño y la fuente, pero hay otros estilos no tan obvios. Por ejemplo: el estilo por defecto para un elemento heading 1 (h1) incluye unos márgenes de 10 pixels por encima y por debajo del texto. Si queremos modificar el estilo de h1 para que no lleve márgenes, tendremos que indicar de manera explícita unas reglas que conviertan dichos valores a cero. <br>
+                    Todos los elementos HTML incluyen márgenes por defecto. Aunque los navegadores web actuales tienen una calidad muy superior a los antiguos, conviene saber que cada motores de restitución empleado por los navegadores aplica sus propias reglas para mostrar los elementos en pantalla. En teoría esto quiere decir que el margen por defecto de 10 pixeles en un navegador X puede transformarse en 15 pixels en el navegador Y. Estas diferencias generan resultados no homogéneos a la hora de ver las páginas en distintos sistemas (no obstante, las diferencias tampoco son tan drásticas como hemos sugerido en este ejemplo, pero existen y hay que contar con ellas). <br>
+                    Una técnica para homogeneizar las presentaciones en pantalla consiste en utilizar un archivo CSS de reset que elimine los estilos por defecto aplicados a los elementos HTML utilizados con más frecuencia. Con este reseteo de valores podemos conseguir una base fiable y coherente sobre la cual construir nuestros nuevos estilos. 
+                    </p>
+            </article>
+            <article>
+                <h2>Ampliación de la hoja de estilos de reset</h2>
+                <p>Eric Meyer fue el primer desarrollador que preparó hojas de estilo de reset, que después distribuyó para uso público. Puedes utilizar sus reglas de estilo en este ejercicio. Si quieres buscar más información sobre las técnicas de reset, visita la web  http://meyerweb.com/eric/thoughts/2007/04/18/reset-reasoning/. <br>
+                    Muchos diseñadores se preparan sus propias hojas de estilos de reset para resolver sus propias necesidades. Por ejemplo, si la familia de fuentes que utilizas con más frecuencia es Verdana, puedes añadir esta regla al estilo del elemento body. Si te gusta poner más espacio de separación entre párrafos, puedes fijar el valor estándar de tamaño de línea que te parezca más adecuado. Lo que importa es disponer de una serie de reglas coherentes que se puedan utilizar para empezar cualquier proyecto de inmediato. <br>
+                    EL uso de hojas de reset CSS puede tener algunas desventajas, sobre todo para los neófitos: tendrán que recordar constantemente que están utilizando dicha hoja de estilos y deben tener en cuenta cómo afectará a los distintos elementos del sitio web. Si estamos aplicando la hoja de reset a todo el sitio, algunos de sus efectos pueden resultar sorprendentes, sobre todo con elementos con los que no estamos especialmente familiarizados. Por ejemplo, un archivo CSS de reset elimina los márgenes externos e internos de la mayoría de los elementos de los formularios, y cuando utilizan por primera vez con campos de formulario, muchos se preguntan por qué los botones, campos de texto y otros elementos aparecen de esa forma.
+                    </p>
+            </article>
+            <article>
+                <h2>Breve historia de las técnicas de presentación en pantalla para la Web</h2>
+                <p>Aunque aquí vas a aprender a crear un diseño visual de página utilizando estilos CSS, debes saber que esto no ha sido siempre la técnica normal. Cuando se empezó con el diseño web a mediados de los 90, el único método que se podía emplear para crear estructuras visuales complejas, como por ejemplo la presentación en varias columnas, consistía en emplear el elemento tabla (table). La tabla HTML estaba pensada inicialmente para mostrar datos de manera estructurada, en filas, columnas y celdas. Sin embargo los diseñadores empezaron a utilizar este elemento como base para las estructuras visuales de las páginas. En aquel momento esa técnica estaba plenamente justificada: las tablas era lo único que tenían para generar el tipo de diseños que se necesitaban y, además, eran un recurso extremadamente flexible. <br>
+                    A partir de aquí, empezaron a utilizarse técnicas como el anidamiento de tablas, es decir, crear tablas dentro de celdas de otras tablas de mayor tamaño. <br>
+                    CSS ha sustituido ya el empleo de tablas para organizar las páginas, por lo que los elementos de tabla de HTML van regresando, poco a poco, a su función original, que es la de mostrar datos estructurados, y abandonan su papel como armazón visual de las páginas. Seguramente podrás seguir encontrando numerosos ejemplos de este tipo de estructuras en la web, pero en este libro no vas a aprender a crearlas, sino que vas a aprender los conceptos básicos de CSS que nos permiten obtener los mismos resultados.
+                    </p>
+            </article>
+            <article>
+                <h2>Introducción a las distintas opciones de presentación de páginas</h2>
+                <p>Antes de la estructura visual de nuestras páginas web tenemos que decidir unas cuantas cosas. Lo primero es qué anchura va a tener. Hay dos categorías principales de estructuras en base a su anchura: las de anchura fija y las de ancho variable. En las estructuras de ancho fijo todos los elementos de la página se anidan dentro de un contenedor que tiene un ancho explícito (en este ejemplo utilizamos el valor de 960 pixels, pero se suele utilizar también la unidad de medida em). La anchura fija es una solución muy cómoda para el diseñador ya que permite ubicar con precisión los distintos elementos (cabeceras, barras laterales y pies de página). Además aporta un esqueleto robusto para otros elementos, como la anchura de párrafo o el posicionamiento de imágenes cuando éstas aparecen en gran número (por ejemplo en sitios web de catálogos de producto). <br>
+                    Las estructuras flexibles se llaman así porque están pensadas para adaptarse a la anchura de la ventana del navegador en cualquier momento. Este tipo de disposiciones es útil cuando los usuarios acceden desde pantallas con resoluciones muy variadas, lo que hace imposible elegir un ancho fijo que ofrezca el mismo aspecto en todas ellas.  Una estructura flexible bien diseñada es capaz de ajustarse automáticamente al tamaño de ventana del navegador. <br>
+                    Estas estructuras son adecuadas para la web porque permiten el reposicionamiento en pantalla de textos e imágenes. Puesto que los dispositivos móviles suponen actualmente una proporción importante de los navegadores en uso en el mercado, las estructuras flexibles por lo general se prefieren para ofrecer una mejor experiencia en este nuevo tipo de interfaces frente a las estructuras de ancho fijo, que habitualmente tienen problemas por falta de espacio (sobre todo en teléfonos móviles). <br>
+                    Las estructuras de ancho variable son más difíciles de diseñar y obligan al creador a resolver una serie de asuntos adicionales. Por ello, en esta lección vamos a empezar por crear una estructura de anchura fija.
+                    </p>
+            </article>
+            <article>
+                <h2>La propiedad float CSS</h2>
+                <p>La propiedad float en CSS hace posible que un texto pueda escribirse alrededor de una imagen. Este estilo ha sido tomado del diseño de imprenta, donde a este efecto se le llama “justificación” del texto. CSS consigue el mismo efecto haciendo que los elementos que siguen a un elemento “flotante” puedan rodearlo, cambiando su posición relativa con respecto a él. Este comportamiento también nos sirve para crear columnas en una página. <br>
+                    Si queremos tener múltiples elementos flotantes dentro del mismo contenedor, el resultado es que se alinean entre sí. Este comportamiento se suele utilizar en ciertas funciones habituales de las páginas web, como por ejemplo los menús horizontales o las galerías de imágenes. <br>
+                    Es fundamental conocer cómo interactúan múltiples elementos flotantes unos con otros a fin de utilizarlos correctamente.
+                    </p>
+            </article>
+        </section>
+        <section class="preguntas">
+            <article>
+                <h3>¿Qué es un CSS?</h3>
+                <p>CSS es un mecanismo complementario del lenguaje HTML que permite indicarle al navegador el estilo que debe darle a los distintos elementos al desplegar la información de un sitio web. Mientras que los comandos HTML le indican al navegador que ciertas partes del texto son títulos, subtítulos, enlaces o párrafos, CSS es lo que le dice, entre otras cosas, qué fuente, tamaño, color o alineación debe tener un elemento de la página. También CSS significa Cascade Style Sheets, que se traduce al español como “Hojas de Estilo en Cascada”. Las hojas de estilo son un recurso que existe desde que se usaba el antecesor del HTML: el SGLM, un lenguaje para crear documentos electrónicos que nació a inicios de los 70's.</p>
+            </article>
+            <article>
+                <h3>¿Para qué sirve un CSS</h3>
+                <p>Los estilos CSS son algo que puedes agregar de manera individual a cada elemento de tu plantilla HTML, pero esto resulta engorroso e impráctico. Cuando enlazas una página HTML a una hoja de estilos CSS, ésta tiene una serie de comandos que modifican a todos los elementos que concuerden con determinado criterio. <br>
+                    Dicho de otro modo, es más fácil y rápido enlazar tu plantilla HTML a un archivo CSS para que el navegador entienda que debe desplegar todos los Títulos H2 en azul, antes que integrar un comando de estilo independiente para cada H2 que incluyas en tus páginas. <br>
+                    Otra de las ventajas del CSS es que puedes usar una misma plantilla para darle formato a varios sitios web, y si necesitas hacer cambios basta con modificar el elemento en la plantilla y actualizar los sitios vinculados.
+                    </p>
+            </article>
+            <article>
+                <h3>¿Cuál es la diferencia que sería más difícil de realizar en un sitio web si se optara por no usar un CSS?</h3>
+                <p>Si no hay CSS en la página web, y cada navegador analiza cada página web de acuerdo con su propia forma analítica, entonces la página que vemos ahora será un pedazo de arena sin sentido de la belleza. Al mismo tiempo, las hermosas páginas diseñadas por diseñadores de UI dejarán de existir. <br>
+                    Si no usa CSS, ¿puede usar gráficos y texto para lograr una página hermosa? En el caso de que sea necesario mostrar gráficos y efectos de diseño de texto, también puede usar la forma de insertar imágenes para lograrlo, pero si una página web está llena de imágenes, lo hará. Afecta la velocidad de carga de las páginas web y la experiencia del usuario no será demasiado buena. En la actualidad, ningún sitio web adopta el formato de imágenes, sino la forma de combinar imágenes y textos. Por lo tanto, es difícil implementar la página si se implementa en forma de gráficos y texto sin soporte CSS.
+                    </p>
+            </article>
         </section>
     </main>
+        <section class="conclusiones">
+            <h2>Conclusiones</h2>
+            <article>
+                <h3>Kevin Daniel Villareal 1899983</h3>
+                <p>CSS ha sido de gran importancia para el desarrollo de las páginas web, ya que el estilo que se visualiza en una página es el encargado de llamar nuestra atención formándonos una buena o mala primera impresión para así poder conseguir que un sitio sea mucho más visitado en un principio.</p>
+            </article>
+            <article>
+                <h3>Bryant Jesús Morales Castañeda 2010037</h3>
+                <p>En conclusión, CSS es la tecnología creada con el fin de separar la estructura de la presentación, y mejorar la usabilidad y experiencia de usuario de un sitio web, permitiendo el desarrollo web responsive y disminuyendo el procesamiento y el tiempo de carga, factores que pueden marcar la diferencia entre triunfar o morir en el intento. También pues CSS tiene muchas características como el mejorar una página web metiéndole colores, tipos de letras distintos y otras cosas más que puedes usar en un archivo de estilo CSS, para darle un aspecto y una visualización más agradable y mas colorida para atraer la atención de las personas en tu sitio web y que estas se entretengan mas y no se distraigan porque eso funciona mucho con los niños pequeños el hacer páginas web mas ilustradas, coloridas y animadas para que los niños se diviertan y se entretengan viendo la página sin llegar a aburrirse además de que haciendo páginas más atractivas visualmente con el CSS también puedes hacer que las personas visiten mas tu pagina web y pues así tu sitio web sea muy visitado ya que genera una buena impresión en las personas y no una mala impresión.</p>
+            </article>
+            <article>
+                <h3>Cristopher Alan Ayala Ochoa 1915611</h3>
+                <p>Junto con HTML y JavaScript CSS es uno de los 3 pilares en la programación web, hoy en y desde hace años es impoible pensar en construir una página web sin CSS. Al igual que HTML, CSS no es considerado un lenguaje de programación pero como se dijo antes eso no le quita su lugar como uno de las 3 herramientas fundamentales con las que se construye la web.</p>
+            </article>
+        </section>
 </body>
 </html>

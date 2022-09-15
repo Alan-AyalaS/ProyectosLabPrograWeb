@@ -60,5 +60,65 @@ html {
 
 .navegador a:hover {
     font-weight: 900;
-    color:rgb(255, 227, 149);
+    color:rgb(0, 0, 0);
 }
+
+
+main {
+    width: 80%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main p {
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main h1 {
+    font-size: 5rem;
+    text-align: center;
+    margin: 90px 0px 90px 0px;
+    font-family: monospace;
+}
+
+main h2 {
+    margin-top: 25px;
+    margin-bottom: 55px;
+    font-size: 2.5rem;
+}
+
+main h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+main section {
+    margin-bottom: 80px;
+}
+
+main section article {
+    margin-bottom: 30px
+}
+
+.conclusiones h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+ .conclusiones article {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 70px;
+ }
+
+ .conclusiones h3 {
+    font-size: 2rem;
+ }
+
+ .conclusiones p {
+    font-size: 1.5rem;
+ }
