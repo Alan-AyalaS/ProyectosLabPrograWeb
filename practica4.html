@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Montserrat:wght@300&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/practica4.css">
     <title>Practica 4 Equipo 16</title>
 </head>
@@ -20,8 +23,184 @@
         </nav>
     </header>
     <main>
-        <h1></h1>
-        <section></section>
+        <section class="introduccion">
+            <h1>Lección 2. <br> Conceptos básicos de HTML, XHTML y CSS</h1>
+            <h2>Lenguajes web</h2>
+            <p>En esta lección vamos a conocer los elementos básicos de dos lenguajes: HTML y CSS. Aunque tienen distinta sintaxis y reglas, dependen fuertemente uno del otro. Al finalizar esta lección podrás saber cómo crear paginas sencillas HTML, añadir imágenes, crear enlaces de una página a otra y modificar su aspecto en pantalla utilizando CSS.
+               <br> Este tema es enormemente extenso y muchos de los principios básicos que se explican aquí te enseñarán a crear sitios web de calidad con los medios disponibles en este momento, al tiempo que te preparan para el futuro, al avanzar las nuevas funcionalidades de HTML5.
+                </p>
+        </section>
+        <section class="html">
+            <h1>HTML</h1>
+            <article>
+               <h2>La estructura de la página web se basa en HTML</h2>
+               <p>Los documentos HTML (iniciales de Hypertext Markup Language) utilizan la extensión .htm o .html. Esta extensión avisa al navegador web o a un dispositivo como un teléfono móvil, que en este archivo hay contenido HTML y dicho contenido se restituye en la ventana del navegador o la pantalla del dispositivo siguiendo las reglas del lenguaje HTML. <br>
+                Las etiquetas se utilizan para definir el contenido de una página HTML. Estas etiquetas quedan enmarcadas dentro de los símbolos "menor que" (<) y "mayor que" (>) y se ponen al principio y al final de un objeto o texto utilizado en la página HTML. Aquí vemos un ejemplo de dos etiquetas de título con textos en ellas. <br>
+                HTML y XHTML están estrechamente relacionados. Existe una lista de reglas definidas por el World Wide Web Consortium (organismo de normalización que también se conoce como W3C) que especifican los límites de HTML y XHTML.
+                </p> 
+            </article>
+            <article>
+                <h2>Cómo se representa el código HTML en el navegador</h2>
+                <p>A. Doctype. Esta línea indica al navegador que debe interpretar todo el código que sigue de acuerdo con un conjunto de reglas específico. <br> <br>
+                    B. Elemento HTML. Este elemento contiene a los demás y le indica al navegador que contiene un documento HTML.
+<br>             <br>       C. Elemento HEAD. En esta sección aparece información sobre la página, pero no se muestra en la pantalla.
+                    <br> <br> D. Elemento TITLE. Cualquier contenido dentro de las etiquetas "title" se muestra en la parte superior del navegador. Es lo que se utiliza cuando un usuario marca una página como "favorito" en el navegador. <br> <br>
+                    E. Elemento BODY. Todo el contenido dentro del body se muestra en la ventana principal del navegador. <br> <br>
+F. Elemento HEADING 1. El primero de seis elementos de cabecera. El contenido dentro de un heading de nivel 1 se muestra en tipografías grandes y en negrita. <br> <br>
+G. Elemento IMAGE: enlaza a un archivo de imagen y la muestra en pantalla. <br> <br>
+H. Elemento PARAGRAPH: por defecto, el navegador añade un salto antes y después de este elemento, que suele contener varias líneas de texto. <br> <br>
+I. Elemento STRONG: el texto dentro de él se muestra en negrita. <br> <br>
+J. Elemento ORDERED LIST: abre una lista de elementos en forma de líneas numeradas por orden. <br> <br>
+K. Elemento LIST: cada línea con esta etiqueta recibe automáticamente un número ordinal empezando por el 1.
+                </p>
+            </article>
+            <article>
+                <h2>Estructura HTML</h2>
+                <p>Uno de los conceptos más importantes que debemos dominar a la hora de diseñar contenidos web es la estructura anidada de los documentos HTML. Los elementos suelen presentarse contenidos unos dentro de otros. Por lo general tenemos que empezar por diseñar la estructura HTML de la página para después continuar con los estilos, aplicando CSS. <br> <br>
+                    El elemento &lt;body&gt; está anidado (incluido) dentro del elemento &lt;html>. En términos de programación, &lt;body> está colocado entre la etiqueta de apertura &lt;html> y la de cierre &lt;/html>, y por eso decimos que las etiquetas anidadas son las que se encuentran entre otras etiquetas de apertura y cierre. Ambos elementos, &lt;body> y &lt;html>, forman la estructura básica de toda página web. Cuando un navegador abre un documento HTML busca esta estructura. <br><br>
+                    El contenido dentro de la etiqueta body es la parte visible de la página, ya que es lo que se muestra en la ventana del navegador. <br><br>
+                    En los documentos HTML parte del contenido se muestra en pantalla dentro de la ventana del navegador, pero hay otra parte del código que queda oculta, aunque es de gran utilidad para el navegador, para los motores de búsqueda y para el desarrollador. Algunos ejemplos de este código oculto son los scripts que sirven para añadir interactividad a la página, o también el código que ayuda a los buscadores a clasificar el documento, y los estilos que definen el aspecto de la página. Este código suele aparecer dentro del elemento &lt;head>, el cual a su vez, está anidado dentro de las etiquetas <html>.
+                     </p>
+            </article>
+            <article>
+                <h2>Insertar imágenes en HTML</h2>
+                <p>Para colocar imágenes dentro de un documento HTML se utiliza la etiqueta &lt;img>. Al igual que ocurre con la etiqueta &lt;a>, la etiqueta de imagen por sí sola no hace nada. Depende del valor de los atributos que especifiquemos, que indican qué imagen se debe mostrar y cómo ha de hacerse. Aquí vamos a insertar una imagen en nuestro documento HTML.</p>
+            </article>
+        </section>
+        <section class="xhtml">
+            <h1>XHTML</h1>
+            <article>
+                <h2>Detalles de la sintaxis de XHTML</h2>
+                <p>Hay una diferencia esencial entre HTML 4.0 y XHTML 1.0 – los dos estándares más recientes publicados por el W3C (World Wide Web Consortium). Tal y como está definido el XHTML, las páginas escritas en XHTML se pueden ver también en los navegadores que muestran las páginas HTML actuales. Las etiquetas y atributos de XHTML y HTML siguen siendo las mismas, pero la sintaxis del código XHTML es más estricta.
+                   <br> <br> Las diferencias más importantes entre XHTML y HTML son estas: <br> <br>
+                    </p>
+
+                <ul>
+                    <li>En XHTML, todas las etiquetas deben escribirse en minúsculas.</li> <br>
+                    <li>XHTML exige que todas las etiquetas de apertura lleven su correspondiente etiqueta de cierre, es decir, siempre debe existir una etiqueta al principio y otra al final de cualquier elemento, sea un título, párrafo, imagen u otro.</li> <br>
+                    <li>XHTML exige que el anidamiento de etiquetas (su inclusión unas dentro de otras), siga unas reglas estrictas.</li> <br>
+                </ul>
+            </article>
+            <article>
+                <h2>Doctype indica al navegador qué debe esperar</h2>
+                <p>Al inicio de toda página web debe aparecer una declaración Doctype. La declaración de "tipo de documento" le aporta pistas al navegador sobre el tipo de información que se va a encontrar en la página. Puesto que las especificaciones de HTML y XHTML son distintas, el navegador sabe así qué lenguaje va a interpretar y representar. El navegador restituye la página empezando por la primera línea y va avanzando de principio a fin, por lo que esta indicación en la primera línea de todas tiene pleno sentido. Aunque no es obligatoria, es una buena práctica empezar siempre utilizando doctype al principio de nuestras páginas. <br> <br>
+                    Cuando un navegador lee una declaración Doctype, espera que todo en la página sea conforme con el lenguaje indicado. Si la página es totalmente conforme con las especificaciones, se considera válida.</p>
+            </article>
+            <article>
+                <h2>El W3C y la validación de la página</h2>
+                <p>W3C es la abreviatura con la que se conoce al World Wide Web Consortium una organización sin ánimo de lucro cuyo objetivo consiste en orientar la evolución de la Web. El W3C ofrece directrices y reglas para especificaciones como HTML y XHTML. Una forma de definir la validez del código HTML o XHTML que generamos es utilizar el servicio online de validación del W3C, que es gratuito.</p>
+            </article>
+            <article>
+                <h2>Otras ventajas del diseño basado en estándares</h2>
+                <p>La validación de páginas del W3C es el aspecto más tangible de un diseño web conforme a estándares, pero hay también otras ventajas importantes al crear páginas bien estructuradas: <br><br>
+                   <strong>Menos código:</strong> el uso de HTML y CSS nos permite crear páginas similares con menos líneas de código, es decir, menos trabajo para el desarrollador y tiempos de descarga menores para el visor. <br><br>
+                    <strong>Mantenimiento más sencillo:</strong> tener menos código supone un mantenimiento más sencillo, y esto beneficia tanto al que escribe el código como a cualquier otra persona que después deba encargarse de su mantenimiento y revisión. <br> <br>
+                    <strong>Accesibilidad:</strong> los documentos creados de forma semántica, es decir, que utilizan la etiqueta HTML más adecuada a su función en cada momento, pueden facilitar la lectura y navegación a personas con discapacidad visual y los usuarios que los visitan encuentran la información más fácilmente. <br> <br>
+                    <strong>Optimización para motores de búsqueda:</strong> Las páginas web que incluyen secciones claras e identificadas de forma lógica, tanto a nivel de código como de contenidos, facilitan la labor a los motores de búsqueda a la hora de indexarlas y clasificarlas puesto que con un contenido organizado y bien identificado resulta más fácil evaluar el contexto temático y la relevancia de la información que ofrecen. <br> <br>
+                    <strong>Compatibilidad:</strong> los sitios web que independizan la estructura con respecto al estilo se adaptan mucho más fácilmente a dispositivos móviles y formatos de pantalla variados. CSS nos permite aplicar hojas de estilo alternativas que optimizan la presentación en pantalla dependiendo del dispositivo utilizado.
+                    </p>
+            </article>
+        </section>
+        <section class="css">
+            <h1>CSS</h1>
+            <article>
+                <h2>El papel de CSS</h2>
+                <p>CSS (Cascading Style Sheets) utiliza un lenguaje distinto de HTML. CSS nos permite aplicar estilos de manera coherente a los distintos elementos de las páginas del sitio web, de modo que los títulos, listas y párrafos pueden verse igual en todas y cada una de las páginas.</p>
+            </article>
+            <article>
+                <h2>Notación hexadecimal de color</h2>
+                <p> El color, tanto en HTML como CSS, se designa mediante un código de seis caracteres precedido por el signo de almohadilla. A esta notación se le llama código hexadecimal, y es el sistema que se utiliza para identificar y establecer el color de los elementos. Con esta notación podemos reproducir prácticamente cualquier color. Por ejemplo, el color rojo oscuro se representa como #CC0000. <br><br>El código se divide en tres pares de dígitos, y cada uno de ellos representa el valor RGB del espectro. Por ejemplo, el color blanco se representa en notación RBG como R:255 G:255 B:255, y su equivalente en HTML en formato hexadecimal es #FFFFFF (siendo FF el equivalente hexadecimal del número 255 decimal, que se repite para los tres pares). Un programa de edición de imágenes como Photoshop nos permite elegir un color concreto de una paleta y obtener directamente su equivalente RGB, tanto decimal como hexadecimal, para insertarlo en una regla CSS.</p>
+            </article>
+            <article>
+                <h2>Los estilos de clase y el elemento &lt;span></h2>
+                <p>Los selectores de etiqueta se utilizan con mucha frecuencia, pero solo se pueden aplicar a elementos HTML. Cuando lo que queremos es modificar el estilo de alguna cosa que no coincide exactamente con una etiqueta, por ejemplo cambiar el color de una única palabra dentro de un párrafo, el selector de etiqueta no es una buena opción (e incluso en algunas ocasiones resulta imposible de aplicar). En este caso podemos utilizar el selector de clase, que es una regla CSS que se puede aplicar a cualquier elemento dentro de una página. Los selectores de clase tienen unas opciones de nomenclatura flexibles, pero es muy conveniente utilizar nombres que describan adecuadamente lo que hacen. Por ejemplo, podemos crear selectores de clase como .caption, .imageborder, o .redtext.</p>
+            </article>
+            <article>
+                <h2>Tres maneras de utilizar estilos</h2>
+                <p>En la práctica anterior los estilos estaban situados dentro de la sección de cabecera (&lt;head>) de la página. Esta modalidad recibe el nombre de hoja de estilos interna. Además de hojas de estilo internas, también existen las hojas de estilos externas y los estilos aplicados directamente ("inline"). <br><br>
+                    Una hoja de estilo externa es un documento independiente con la extensión .css. Cuando utilizamos un archivo externo, los estilos se definen en él y en las páginas HTML tenemos que insertar un enlace a dicho archivo. Mientras que las hojas de estilo internas solo se aplican a la página donde residen, las hojas externas se pueden aplicar a múltiples documentos HTML. <br><br>
+                    Los estilos inline o directos son la tercera posibilidad pero se utilizan mucho menos que las otras dos. En este caso, las reglas se declaran dentro de las propias etiquetas HTML. <br><br>
+                    Los estilos directos son herramientas potentes porque se superponen tanto a los estilos internos como a los externos, aunque solamente se aplican a una etiqueta cada vez. Por su propia naturaleza, resulta complicado reutilizarlos. En el ejemplo anterior podemos ver que el estilo para presentar el texto en rojo va dentro de la etiqueta &lt;h1>. Si tuviéramos 50 elementos &lt;h1> en nuestro sitio web y utilizásemos estilos inline, necesitaríamos añadir este código de estilo 50 veces, pero lo peor es que si quisiéramos cambiar el color a verde, tendríamos que buscar las 50 apariciones de este estilo y remplazar la palabra "red" por "green". Los estilos inline son útiles para aplicaciones puntuales o cuando no podemos utilizar una hoja de estilos interna o externa. Uno de estos casos puede ser un correo electrónico en formato HTML.
+                    </p>
+            </article>
+            <article>
+                <h2>Cuándo utilizar hojas de estilo internas y externas</h2>
+                <p>En las hojas de estilo internas, las reglas CSS quedan escritas directamente dentro del documento utilizando la etiqueta &lt;style>. La hoja de estilos queda ubicada dentro de la sección &lt;head> del documento. <br><br>
+                    En el caso de las hojas internas, las reglas CSS solo se aplican al documento en donde residen. Por ejemplo, si tenemos un sitio web con 20 páginas y decidimos utilizar hojas de estilo internas, deberemos crear una hoja de estilos dentro de cada una de esas 20 páginas. Un cambio en cualquier regla exigiría modificar todas y cada una de las hojas de estilo internas en dichas páginas para mantener la consistencia. <br><br>En las hojas externas las reglas CSS, como ya explicábamos anteriormente, se guardan en archivos independientes. Podemos asociar un mismo archivo .css a cualquier página HTML, y con ello nos ahorraremos mucho trabajo y ganamos en flexibilidad. Si definimos una regla para el elemento <p> en una hoja de estilo externa, todos los párrafos del sitio web quedan modificados de inmediato. En la práctica siguiente vamos a crear una hoja de estilo externa la asociaremos a una página HTML nueva.</p>
+            </article>
+            <article>
+                <h2>Creación de una hoja de estilos externa</h2>
+                <p>Una página HTML no tiene por qué limitarse a utilizar solamente una hoja de estilos externa, y en muchos sitios web de grandes dimensiones, las definiciones de estilos suelen repartirse entre varios archivos, para facilitar su organización y mantenimiento. Podemos incluso utilizar hojas de estilos para funciones concretas, como imprimir una página o visualizar el contenido en dispositivos móviles. Se pueden diseñar hojas de estilo también para que nuestros sitios web sean compatibles con navegadores antiguos.</p>
+            </article>
+            <article>
+                <h2>Uso de textos y tipos de letra en la web</h2>
+                <p>A la hora de diseñar para la web, podemos formatear el texto de una forma parecida a como se hace en las aplicaciones de procesamiento de textos y diseño publicitario de los equipos de escritorio, pero debemos tener en cuenta algunas diferencias importantes. Cuando especificamos el uso de una fuente (tipo de letra) concreta, esta fuente ha de estar instalada en el ordenador o el dispositivo del usuario donde se va a restituir la página. Si el ordenador o dispositivo no dispone de esa fuente, el navegador la sustituye por otra.
+                <br><br>    Puesto que es imposible saber qué fuentes están instaladas en los ordenadores de los usuarios, y debido a la capacidad que tienen los navegadores para sustituir unos tipos de letra por otros, es posible que los resultados obtenidos en ciertos equipos no se correspondan con el diseño que hemos previsto. Una opción puede ser utilizar fuentes que sabemos que podemos encontrar en la mayoría de los ordenadores. Lo malo es que son muy pocas estas fuentes de las cuales podemos tener la certeza de que se encuentran en prácticamente todos los ordenadores del mundo.
+                    </p>
+            </article>
+            <article>
+                <h2>Tipos de letra de uso común en la web</h2>
+                <p> Estas son las Fuentes que podemos utilizar con más confianza en la Web:</p> <br><br>
+                <ul>
+                    <li>Arial</li>
+                    <li>Verdana</li>
+                    <li>Georgia</li>
+                    <li>Times New Roman</li>
+                    <li>Courier</li>
+                    <li>Trebuchet</li>
+                    <li>Lucida</li>
+                    <li>Tahoma</li>
+                    <li>Impact</li> <br><br>
+                </ul>
+                <p>La lista es pequeña porque tiene en cuenta las plataformas Mac y Windows y suponemos además que aún acceden a la web muchos ordenadores antiguos. Estos equipos más antiguos tienen una lista de fuentes preinstaladas más reducida que los actuales, por lo que un diseñador tiene que tener esto en cuenta a la hora de seleccionar el tipo de letra que usará en sus páginas.
+                   <br><br> Por otra parte, esta lista es pequeña también por razones de tipo estético. Por ejemplo, las fuentes Courier e Impact se usan poco porque, aunque estén disponibles de forma general, su apariencia es muy peculiar y limita mucho su uso de forma habitual.
+                     Una de las soluciones que nos puede ayudar a resolver la falta de tipos de letra variados en la Web es el uso de una "pila" de fuentes, ("font stack" en inglés). En CSS, la pila de fuentes es una lista de varios tipos de letra que puede utilizar el navegador para mostrar texto en pantalla.
+                    </p>
+            </article>
+            <article>
+                <h2>El prometedor futuro de las fuentes</h2>
+                <p>La escasez de opciones a la hora de utilizar distintas fuentes en la web ha causado frustración entre los diseñadores Web durante muchos años. Este problema va aliviándose a medida que ciertas empresas han ido creando soluciones para que las páginas puedan verse en un navegador con los tipos de letra especificados por los creadores. <br><br>
+                    El panorama de las fuentes está cambiando, sin embargo, con la aparición de las llamadas "web fonts" y, en concreto, con la funcionalidad @font-face de CSS. Ahora es posible añadir una gran variedad de tipos de letra y tener la certeza de que nuestras páginas se podrán ver tal y como pretendemos.
+                    </p>
+            </article>
+            <article>
+                <h2>Cambiar el tamaño del texto con CSS</h2>
+                <p>Cuando utilizamos CSS para formatear textos para la web, disponemos de algunas opciones para establecer su tamaño y su grosor. La propiedad CSS que controla el tamaño del texto se llama font-size. <br><br>
+                    Podemos modificar el valor de la propiedad font-size de varias formas:
+                    </p>
+                    <ul>
+                        <li><strong>tamaño absoluto:</strong> se trata de una serie de palabras clave que indican tamaños predefinidos de letra. Los tamaños nominados escalan de acuerdo con las preferencias del usuario con respecto a la letra. Los valores posibles xx-small, x-small, small, medium, large, x-large y xx-large.</li> <br><br>
+                        <li><strong>Longitud:</strong> Es un número seguido de un indicador del sistema de medida (cm, mm, in, pt, o pc) o bien un de unidades relativas (em, ex, o px).</li> <br><br>
+                        <li><strong>Porcentaje:</strong> Un entero seguido del signo de porcentaje (%). El valor es un tanto por ciento del tamaño de letra del objeto padre.</li> <br><br>
+                        <li><strong>Tamaño relativo:</strong> una serie de palabras clave que se interpretan como relativas al tamaño de letra del objeto padre. Los valores posibles son larger y smaller.</li>
+                    </ul>
+            </article>
+        </section>
+        <section class="preguntas">
+            <h1>Preguntas</h1>
+            <article>
+                <h2>1.- ¿Qué es un XML y para qué sirve? </h2>
+                <p>XML es el acrónimo significa Extensible Markup Language, que es un lenguaje de marcado que define un conjunto de reglas para la codificación de documentos. El XML sirve para presentar información estructurada en una página web de modo que esta información pueda ser almacenada, transmitida, procesada, visualizada e impresa por diversas aplicaciones y dispositivos.</p>
+            </article>
+            <article>
+                <h2>2.- ¿Qué características tiene un documento HTML? </h2>
+                <p>HTML es un lenguaje de marcado que nos permite indicar la estructura de nuestro documento mediante etiquetas. Este lenguaje nos ofrece una gran adaptabilidad, una estructuración lógica y es fácil de interpre¬tar tanto por humanos como por máquinas.</p>
+            </article>
+            <article>
+                <h2>3.- ¿Qué es y para qué sirve un archivo XHTML?</h2>
+                <p>XHTML (eXtensible HyperText Markup Language) es, básicamente, HTML expresado como XML válido. Es más estricto a nivel técnico, pero esto permite que posteriormente sea más fácil al hacer cambios o buscar errores entre otros. Por tanto, podemos decir que XHTML es la versión XML de HTML. Desde el punto de vista del desarrollador, veremos que XHTML hereda la rigidez de XML, con lo cual no se puede escribir documentos XHTML de cualquier manera, como ocurría con HTML, sino atendiendo a unas normas.</p>
+            </article>
+        </section>
+        <section class="conclusiones">
+            <h2>Conclusiones</h2>
+            <article>
+                <h3>Bryant Jesús Morales Castañeda 2010037 ITS</h3>
+                <p>En conclusión acerca de los temas vistos en este trabajo, podría decir que el HTML es un lenguaje que podemos utilizar mucho para desarrollar páginas web, ya sea para poner una investigación, un foro, un tutorial, podemos utilizar el HTML para crear una página web de esos distintos tipos que mencione, también aquí se incluye el CSS el cual es un lenguaje que va de la mano o sea está relacionado con el HTML, ya que se utiliza para darle un mejor diseño a tu pagina web, ya sea cambiar el tipo de letras, el tamaño, los colores de las letras y de la pagina en general y también puedes hacer muchas otras cosas como cambiar el tamaño y la posición de una imagen y otras cosas más, y finalmente el XHTML pues es algo muy parecido al HTML solo que es un lenguaje que es más estricto a la hora de utilizarlo con sus comandos, etiquetas y todas las cosas que este lenguaje contiene y cambia unos cuantos aspectos a los del HTML, pero al final si quieres hacer una modificación o corregir algo un error o algo por el estilo es mucho más fácil de hacerlo en el lenguaje de XHTML el cual pues básicamente seria como una modificación o fusión como quieran llamarlo del lenguaje XML con el lenguaje HTML.</p>
+            </article>
+            <article>
+                <h3></h3>
+            </article>
+        </section>
     </main>
 </body>
 </html>
