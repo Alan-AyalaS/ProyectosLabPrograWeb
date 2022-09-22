@@ -72,9 +72,9 @@ main {
     background-color: rgba(249, 249, 249, 0);
     border-radius: 50px;
     box-shadow: 10px 14px 99px -4px rgba(0,0,0,0.41);
--webkit-box-shadow: 10px 14px 99px -4px rgba(0,0,0,0.41);
--moz-box-shadow: 10px 14px 99px -4px rgba(0,0,0,0.41);
-margin-bottom: 50px;
+    -webkit-box-shadow: 10px 14px 99px -4px rgba(0,0,0,0.41);
+    -moz-box-shadow: 10px 14px 99px -4px rgba(0,0,0,0.41);
+    margin-bottom: 50px;
 }
 
 section, article {
@@ -124,6 +124,12 @@ p,li {
 
 li {
     margin-left: 25px;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
 }
 
 
