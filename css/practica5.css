@@ -1,0 +1,162 @@
+:root {
+    --color-principal: rgb(0, 21, 177);
+    --color-secundario: rgb(58, 63, 232);
+    --fuente-principal:  Georgia, 'Times New Roman', Times, serif;
+    --fuente-secundaria: font-family: 'DM Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: var(--color-secundario);
+    color: #FFF;
+}
+
+.encabezado {
+    background-color: var(--color-principal);
+    padding: 20px 0 20px 0;
+    width: 100%;
+    font-family: var(--fuente-principal);
+}
+
+.encabezado .navegador {
+    display: flex;
+}
+
+
+.navegador div {
+    margin-left: 30px;
+    display: flex;
+    justify-content: start;
+}
+
+.navegador img {
+    margin-right: 20px;
+}
+
+.navegador div p {
+    color: #FFF;
+    margin-left: 30px;
+    padding-right: 50px;
+    font-size: 3.5rem;
+    margin-top: 13px;
+}
+
+.navegador .enlaces {
+    width: 30%;
+    display: flex;
+    justify-content: end;
+}
+
+.encabezado .navegador p {
+    justify-content: end;
+} 
+
+.encabezado .navegador .practica {
+    margin-left: 105px;
+}
+
+.navegador li, a {
+    color: #FFF;
+    list-style: none;
+    text-decoration: none;
+    margin-top: 13px;
+    font-size: 3.5rem;
+    margin-left: 15px;
+}
+
+.navegador a:hover {
+    color: var(--color-secundario);
+}
+
+main {
+    width: 80%;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+main h1{
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+main h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+main article h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+main article {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+figure {
+    display: flex;
+}
+
+main img {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+main article ol {
+    margin-left: 30px;
+    font-size: 1.8rem;
+}
+
+.secciontabla h2 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+main .tabla {
+    width: 100%;
+}
+
+main table {
+    padding: 15px;
+    background-color: rgba(0, 3, 101, 0.562);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+main table tr,td {
+    padding-left: 20px;
+}
+
+.video {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.himno {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+}
