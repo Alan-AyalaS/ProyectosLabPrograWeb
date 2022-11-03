@@ -8,6 +8,40 @@
     <title>Practica 7 Equipo 16</title>
 </head>
 <body>
-    <h1>Hola</h1>
+    <script src="VCJuego.js"></script>
+    <header class="encabezado">
+        <nav class="navegador">
+            <div>
+                <p>Lab. Programación Web</p>
+                <p>Práctica 7</p>
+            </div>
+            <ul class="enlaces">
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Bienvenido de vuelta a Villa Calabaza!</h1>
+        
+        <section>
+            <div class="granja">
+                <figure>
+                    <img src="mapa.png" alt="">
+                </figure>
+            </div>
+            <div class="animales">
+                <figure>
+                    <img src="gallina.png" alt="" draggable="true" ondragstart="drag(event)" id="gallina">
+                </figure>
+                <figure>
+                    <img src="vaca.png" alt="" draggable="true" ondragstart="drag(event)" id="vaca">
+                </figure>
+                <figure>
+                    <img src="cerdo.png" alt="" draggable="true" ondragstart="drag(event)" id="cerdo">
+                </figure>
+            </div>
+        </section>
+        <h2>los animales se escaparon de la granja, arrastralos de regreso!</h2>
+    </main>
 </body>
 </html>

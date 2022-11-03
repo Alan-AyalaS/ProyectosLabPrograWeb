@@ -1,5 +1,11 @@
 :root{
-
+    --color-principal: rgb(217, 167, 77);
+    --color-secundario: rgb(39, 174 , 96);
+    --fuente-principal:  Georgia, 'Times New Roman', Times, serif;
+    --fuente-secundaria: font-family: 'DM Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto Mono', monospace;
 }
 
 * {
@@ -47,7 +53,7 @@ html {
 } 
 
 .navegador li, a {
-    color: #FFF;
+    color: #fff;
     list-style: none;
     text-decoration: none;
     font-size: 3rem;
@@ -56,4 +62,37 @@ html {
 
 .navegador a:hover {
     color: var(--color-secundario);
+}
+
+main {
+    background-color: var(--color-secundario);
+}
+
+main h1 {
+    font-size: 4rem;
+    padding: 30px 0 30px 0;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 3rem;
+    padding: 30px 0 30px 0;
+    text-align: center;    
+    padding-bottom: 48px;
+}
+
+section {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+section .granja {
+    margin-right: 30px;
+}
+
+section .animales {
+    height: 60%;
+    padding: 15px;
+    background-color: var(--color-principal);
 }
