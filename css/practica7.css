@@ -92,7 +92,21 @@ section .granja {
 }
 
 section .animales {
+    justify-content: center;
+    text-align: center;
     height: 60%;
-    padding: 15px;
+    padding: 50px;
     background-color: var(--color-principal);
+}
+
+section figure{
+    padding-bottom: 60px;
+}
+
+section .gallina, .vaca, .cerdo {
+    margin-right: 75px;
+}
+
+section .mapa {
+    padding-bottom: 0px;
 }

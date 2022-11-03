@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/practica7.css">
     <title>Practica 7 Equipo 16</title>
 </head>
-<body>
+<body onload="move ('gallina')">
     <script src="VCJuego.js"></script>
     <header class="encabezado">
         <nav class="navegador">
@@ -25,18 +25,18 @@
         
         <section>
             <div class="granja">
-                <figure>
-                    <img src="mapa.png" alt="">
+                <figure class="mapa">
+                    <img src="mapa.png" alt="" id="mapa" ondrop="drop(event)" ondragover="allowDrop(event)">
                 </figure>
             </div>
             <div class="animales">
-                <figure>
+                <figure class="gallina">
                     <img src="gallina.png" alt="" draggable="true" ondragstart="drag(event)" id="gallina">
                 </figure>
-                <figure>
+                <figure class="vaca">
                     <img src="vaca.png" alt="" draggable="true" ondragstart="drag(event)" id="vaca">
                 </figure>
-                <figure>
+                <figure class="cerdo">
                     <img src="cerdo.png" alt="" draggable="true" ondragstart="drag(event)" id="cerdo">
                 </figure>
             </div>
