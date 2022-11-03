@@ -1,0 +1,59 @@
+:root{
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    color: #fff;
+}
+
+.encabezado {
+    background-color: var(--color-principal);
+    padding: 20px 0 20px 0;
+    width: 100%;
+    font-family: var(--fuente-principal);
+}
+
+.encabezado .navegador {
+    display: flex;
+}
+
+
+.navegador div {
+    margin-left: 30px;
+    display: flex;
+    justify-content: start;
+}
+
+.navegador div p {
+    padding-right: 55px;
+    font-size: 3rem;
+}
+
+.navegador .enlaces {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.encabezado .navegador p {
+    justify-content: end;
+} 
+
+.navegador li, a {
+    color: #FFF;
+    list-style: none;
+    text-decoration: none;
+    font-size: 3rem;
+
+}
+
+.navegador a:hover {
+    color: var(--color-secundario);
+}
